@@ -1,0 +1,26 @@
+@charset 'utf-8';
+@import 'compass/reset';
+@import 'compass/css3';
+
+// 定义常用变量
+$page_width:100%;
+$main_color:#00abaf;
+$main_font_size:14px;
+$colors:(a:#333, b:rgb(87, 163, 140), c:rgb(88, 137, 241), d:#982, e:#9c4, f:#aaa, g:#7ac);
+$main_width:1188px;
+$bg_color:#f7f7f7;
+$item_height:656px;
+
+%share_style {
+    width: $main_width;
+    margin: 0 auto;
+}
+
+%clear{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}

@@ -1,0 +1,77 @@
+@import './share';
+
+// item宽度100%
+#item {
+    width:100%;
+}
+// item 内容区居中
+#item .content{
+    @extend %share_style;
+}
+
+// 海信官网
+.item-com {
+    height: 334px;
+    margin-top: 40px;
+    background-color: map-get($colors, a);
+}
+
+// 爆款专区
+.item-hot {
+    height: 964px;
+    background-color: map-get($colors, b);
+}
+
+// 超级电视
+.item-tv {
+    height: 672px;
+    background-color: map-get($colors, d);
+}
+
+// 冰箱专区
+.item-icbox {
+    height: $item_height;
+    background-color: map-get($colors, e);
+}
+
+// 空调专区
+.item-air-conditioner {
+    height: $item_height;
+    background-color: map-get($colors, b);
+}
+
+// 洗衣机专区
+.item-wahsing {
+    height: $item_height;
+    background-color: map-get($colors, f);
+}
+
+// 科龙专区
+.item-wahsing {
+    height: $item_height;
+    background-color: map-get($colors, c);
+}
+
+// 选购攻略
+.item-buymethods {
+    height: 398px;
+    background-color: map-get($colors, d);
+}
+
+// 官方资讯
+.item-news {
+    height: 398px;
+    background-color: map-get($colors, e);
+}
+
+// videos
+.item-videos {
+    height: 378px;
+    background-color: map-get($colors, f);
+}
+
+// 服务
+.item-serve {
+    height: 188px;
+    background-color: map-get($colors, a);
+}

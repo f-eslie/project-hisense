@@ -1,0 +1,8 @@
+@import './share';
+
+// 轮播图
+#banner {
+    width: $page_width;
+    background-color: map-get($colors, b);
+    height: 500px;
+}

@@ -1,0 +1,11 @@
+@import './share';
+
+// 底部样式
+#footer {
+    width: $page_width;
+    background-color: map-get($colors,d);
+    .content {
+        @extend %share_style;
+        height: 410px;
+    }
+}

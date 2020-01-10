@@ -1,0 +1,59 @@
+@import './share';
+
+// 头部
+#header {
+    width: 100%;
+
+    .header-top {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .header-middle {
+        background-color: #444;
+
+        .main {
+            @extend %share_style;
+            height: 36px;
+        }
+        a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: $main_font_size - 3;
+        }
+        a:hover {
+            color: #fff;
+        }
+    }
+}
+
+#header .left {
+    float: left;
+    line-height: 36px;
+    .laba {
+        vertical-align: middle;
+        margin-left: 30px;
+        font-size: $main_font_size - 2;
+    }
+
+}
+
+#header .right {
+    line-height: 36px;
+    float: right;
+    li {
+        float: left;
+        padding: 0 12px;
+        span{
+            font-size: $main_font_size;
+        }
+    }
+    .same-color{
+        a:hover{
+            color: $main_color;
+        }
+    }
+}
+
