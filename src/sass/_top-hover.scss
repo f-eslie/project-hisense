@@ -1,0 +1,10 @@
+@import './share';
+
+#top-hover{
+    position: fixed;
+    left:0;
+    top:-72px;
+    width:$page_width;
+    // display: none;
+    z-index: 100;
+}

@@ -64,7 +64,7 @@
     }
 }
 
-#header .header-bottom {
+#header .header-bottom, #top-hover .header-bottom{
     width: 100%;
     background-color: #fff;
     position: relative;
@@ -77,7 +77,7 @@
     }
 }
 
-#header .header-bottom-main {
+#header .header-bottom-main, #top-hover .header-bottom-main{
     .header-bottom-left {
         float: left;
         width: 152px;
@@ -122,7 +122,7 @@
     }
 }
 
-#header .second-menu {
+#header .second-menu, #top-hover .second-menu{
     position: absolute;
     left: 0;
     right: 0;
