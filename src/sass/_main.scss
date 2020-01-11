@@ -289,7 +289,17 @@
         }
     }
 }
-
+.item-icbox .icbox-top-right{
+    float:left;
+    .icbox-top-right-1{
+        width:594px;
+        img{
+            width:594px;
+            display: block;
+        }
+    }
+    
+}
 // 空调专区
 .item-air-conditioner {
     height: $item_height;

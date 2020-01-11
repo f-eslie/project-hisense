@@ -86,7 +86,7 @@
 
         img {
             width: 100%;
-            display: inline-block;
+            display: block;
         }
     }
 
@@ -115,6 +115,7 @@
 
             li:hover .second-menu {
                 display: block;
+                z-index:99;
             }
 
         }
