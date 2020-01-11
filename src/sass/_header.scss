@@ -18,20 +18,24 @@
             @extend %share_style;
             height: 36px;
         }
+
         a {
             color: #ccc;
             text-decoration: none;
             font-size: $main_font_size - 3;
         }
+
         a:hover {
             color: #fff;
         }
     }
+
 }
 
 #header .left {
     float: left;
     line-height: 36px;
+
     .laba {
         vertical-align: middle;
         margin-left: 30px;
@@ -43,17 +47,180 @@
 #header .right {
     line-height: 36px;
     float: right;
+
     li {
         float: left;
         padding: 0 12px;
-        span{
+
+        span {
             font-size: $main_font_size;
         }
     }
-    .same-color{
-        a:hover{
+
+    .same-color {
+        a:hover {
             color: $main_color;
         }
     }
 }
 
+#header .header-bottom {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+
+    .header-bottom-main {
+        @extend %share_style;
+        height: 72px;
+        line-height: 72px;
+        overflow: hidden;
+    }
+}
+
+#header .header-bottom-main {
+    .header-bottom-left {
+        float: left;
+        width: 152px;
+        height: 43px;
+        margin-top: 18px;
+
+        img {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    .header-nav {
+        float: left;
+
+        .nav-main {
+            li {
+                float: left;
+                height: 72px;
+                line-height: 76px;
+                padding: 0 18px;
+
+                a {
+                    display: inline-block;
+                    font-size: 16px;
+                    color: #333;
+                    text-decoration: none;
+                    line-height: 72px;
+                }
+            }
+
+            li:hover a {
+                color: $main_color;
+            }
+
+            li:hover .second-menu {
+                display: block;
+            }
+
+        }
+    }
+}
+
+#header .second-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -4px;
+    display: none;
+    background-color: #f7f7f7;
+
+    .menu-nav {
+        @extend %share_style;
+        height: 288px;
+
+        .nav-list {
+            width: 800px;
+            float: left;
+            font-size: 12px;
+
+            li {
+                box-sizing: border-box;
+                float: left;
+                width: 188px;
+                height: 44px;
+                margin-bottom: 24px;
+
+                span {
+                    vertical-align: middle;
+                    padding-left: 12px;
+                    line-height: 44px;
+                    color: rgb(100, 100, 100);
+                }
+
+                .icon-arrow {
+                    font-size: $main_font_size;
+                    padding: 0;
+                }
+
+                img {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            li:hover span:nth-of-type(1) {
+                color: $main_color;
+            }
+        }
+
+        // 二级菜单右边图片
+        .nav-goods {
+            float: right;
+            width: 364px;
+            height: 268px;
+
+            li {
+                height: 130px;
+                box-sizing: border-box;
+                float: left;
+                width: 180px;
+                margin-top: 4px;
+                text-align: center;
+                padding: 20px 8px;
+                padding-top: 8px;
+                background: #fff;
+
+                .goods-img {
+                    width: 164px;
+                    height: 80px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .goods-info {
+                    width: 164px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #646464;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .goods-price {
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #ff143e;
+                    font-weight: 700;
+                }
+            }
+            li:hover .goods-info{
+                color: $main_color;
+            }
+            li:nth-of-type(1),li:nth-of-type(3){
+                margin-right:4px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

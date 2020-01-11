@@ -16,11 +16,11 @@ $item_height:656px;
     margin: 0 auto;
 }
 
-%clear{
-    content: ".";
+%clearfix {
+    content: '.';
     display: block;
-    clear: both;
     height: 0;
     overflow: hidden;
     visibility: hidden;
+    clear: both;
 }

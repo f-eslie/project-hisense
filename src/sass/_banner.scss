@@ -3,6 +3,78 @@
 // 轮播图
 #banner {
     width: $page_width;
-    background-color: map-get($colors, b);
-    height: 500px;
+    position: relative;
+    .arrows {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 72px;
+        line-height: 72px;
+        text-align: center;
+        background-color: rgba(11, 16, 16, .2);
+        z-index: 99;
+        text-decoration: none;
+        color: #000;
+
+        .iconfont {
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+        }
+    }
+    .left-arrow {
+        left: 0;
+    }
+
+    .right-arrow {
+        right: 0;
+    }
+    .banner-main {
+        max-width: 2000px;
+        margin: 0 auto;
+        height: 500px;
+        .banner-ul {
+            overflow: hidden;
+            max-width: 100%;
+            height: 100%;
+            position: relative;
+            li {
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            
+            .points {
+                position: absolute;
+                bottom: 10px;
+                left:20px;
+                text-align: left;
+                height: 21px;
+                .points-index {
+                    display: block;
+                    float: left;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 8px;
+                    background: #82858b;
+                    margin: 3px 5px;
+                    opacity: .8;
+                    border: none;
+                    cursor: pointer;
+                    line-height: 14px;
+                }
+                .points-index:hover{
+                    box-sizing: border-box;
+                    width: 14px;
+                    height: 14px;
+                    background-color: transparent;
+                    border: 3px solid #fff;
+                }
+            }
+    
+        }
+    }
 }

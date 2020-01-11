@@ -2,36 +2,292 @@
 
 // item宽度100%
 #item {
-    width:100%;
+    width: 100%;
+
+    .item-top {
+        font-size: 22px;
+        color: #1e1e1e;
+        height: 58px;
+        line-height: 85px;
+    }
+
+    .item-main {
+        // overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .item-main::after {
+        @extend %clearfix;
+    }
 }
+
 // item 内容区居中
-#item .content{
+#item .content {
     @extend %share_style;
 }
 
 // 海信官网
 .item-com {
-    height: 334px;
-    margin-top: 40px;
-    background-color: map-get($colors, a);
+    .com-main {
+        overflow: hidden;
+        height: 296px;
+
+        .com-left {
+            .com-left-main {
+                width: 588px;
+                height: 100%;
+                position: relative;
+            }
+        }
+
+        .com-middle {
+            .com-middle-main {
+                width: 294px;
+                height: 100%;
+                position: relative;
+                margin-left: 6px;
+            }
+        }
+
+        .com-right {
+            .com-right-main {
+                width: 294px;
+                height: 100%;
+                margin-left: 6px;
+
+                .com-right-top {
+                    position: relative;
+                    height: 145px;
+                    margin-bottom: 6px;
+                }
+
+                .com-right-bottom {
+                    position: relative;
+                    height: 151px;
+                }
+            }
+        }
+    }
+}
+
+.item-com {
+    .com-pics {
+        height: 296px;
+        position: relative;
+        float: left;
+
+        .pic-box {
+            height: 296px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 1s;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .com-hover-pic {
+            opacity: 0;
+            // z-index: -1;
+        }
+    }
+
+    .animation-com:hover {
+        .com-active-pic {
+            opacity: 0;
+            // z-index: -1;
+        }
+
+        .com-hover-pic {
+            opacity: 1;
+            // z-index: 1;
+        }
+    }
 }
 
 // 爆款专区
 .item-hot {
     height: 964px;
-    background-color: map-get($colors, b);
+
+    .hot-top {
+        height: 588px;
+
+        .hot-top-left {
+            width: 588px;
+            float: left;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 1s;
+                display: block;
+            }
+        }
+
+        .hot-top-left:hover img {
+            transform: scale(1.1);
+        }
+
+        .hot-top-right {
+            width: 594px;
+            height: 100%;
+            float: left;
+            margin-left: 6px;
+        }
+    }
+
+    .hot-bottom {
+        margin-top: 6px;
+
+        li {
+            float: left;
+
+            img {
+                width: 588px;
+                display: block;
+            }
+        }
+
+        li:nth-of-type(1) {
+            margin-right: 6px;
+        }
+    }
+}
+
+.item-hot ul {
+    height: 100%;
+
+    li {
+        float: left;
+        margin-bottom: 6px;
+
+        img {
+            width: 294px;
+            height: 291px;
+            display: block;
+        }
+    }
+
+    .margin-6 {
+        margin-right: 6px;
+    }
 }
 
 // 超级电视
 .item-tv {
-    height: 672px;
-    background-color: map-get($colors, d);
+    .tv-top {
+        .tv-top-left {
+            float: left;
+            overflow: hidden;
+
+            img {
+                display: block;
+                width: 594px;
+                transition: all 1s;
+            }
+        }
+
+        .tv-top-left:hover img {
+            transform: scale(1.1);
+        }
+
+        .tv-top-right {
+            float: left;
+            width: 594px;
+
+            div {
+                float: left;
+
+                img {
+                    width: 594px;
+                    display: block;
+                }
+            }
+        }
+    }
+    .tv-top::after{
+        @extend %clearfix;
+    }
+    .tv-bottom {
+        margin-top: 20px;
+        height: 374px;
+        ul {
+            height: 100%;
+
+            li {
+                box-sizing: border-box;
+                height: 362px;
+                float: left;
+                padding: 8px;
+                margin-left: 12px;
+                text-align: center;
+                margin-bottom: 12px;
+                background-color: #fff;
+                width: 288px;
+                a{
+                    text-decoration: none;
+                }
+                img {
+                    display: block;
+                    width: 272px;
+                }
+
+                .tvs-info {
+                    
+                    .tv-title {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        height: 20px;
+                        color: #1e1e1e;
+                        text-align: center;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    .tv-desc {
+                        font-size: 12px;
+                        color: #777;
+                        height: 24px;
+                        text-align: center;
+                        line-height: 24px;
+                    }
+
+                    .tv-price {
+                        font-size: 16px;
+                        color: #cc0010;
+                        line-height: 20px;
+                    }
+                }
+
+            }
+            li:nth-of-type(1){
+                margin-left:0;
+            }
+            li:nth-of-type(4){
+                margin-right:0;
+            }
+        }
+    }
 }
 
 // 冰箱专区
 .item-icbox {
-    height: $item_height;
-    background-color: map-get($colors, e);
+    .icbox-main{
+        .icbox-top{
+            height: 588px;
+            .icbox-top-left{
+                img{
+                    width:297px;
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 // 空调专区
