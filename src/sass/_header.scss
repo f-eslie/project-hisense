@@ -3,7 +3,9 @@
 // 头部
 #header {
     width: 100%;
-
+    .header-main{
+        width:100%;
+    }
     .header-top {
         img {
             width: 100%;
@@ -64,13 +66,14 @@
     }
 }
 
-#header .header-bottom, #top-hover .header-bottom{
-    width: 100%;
+#header, #top-hover .header-bottom{
+    // width: 100%;
     background-color: #fff;
     position: relative;
 
     .header-bottom-main {
-        @extend %share_style;
+        width: 1188px;
+        margin:0 auto;
         height: 72px;
         line-height: 72px;
         overflow: hidden;
@@ -92,7 +95,7 @@
 
     .header-nav {
         float: left;
-
+        width:1026px;
         .nav-main {
             li {
                 float: left;

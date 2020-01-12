@@ -1,0 +1,41 @@
+@import './share';
+
+#right-fixed {
+    position: fixed;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    width:52px;
+    ul {
+        font-size: 14px;
+        box-sizing: border-box;
+        right: 0;
+        z-index: 999;
+        padding: 0 7px;
+        bottom: 188px;
+        width:100%;
+    }
+
+    li {
+        float: left;
+        line-height: 18px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-top: 1px solid #eee;
+        height: 40px;
+        width: 40px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #fff;
+        a{
+            text-decoration: none;
+        }
+        span{
+            color: #333;
+            font-size: 22px;
+        }
+    }
+    li:nth-of-type(1){
+        border:none;
+    }
+}

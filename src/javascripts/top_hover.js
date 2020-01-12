@@ -1,6 +1,10 @@
 ! function ($) {
+    loadHover();
     //页面移出1000px，显示box
     $(window).on('scroll', function () {
+        loadHover()
+    });
+    function loadHover(){
         let $top = $(window).scrollTop(); //获取top值
         if ($top >= 600) {
             $('#top-hover').stop(true).animate({
@@ -11,5 +15,5 @@
                 top: -72
             });
         }
-    });
+    }
 }(jQuery);

@@ -1,7 +1,7 @@
 @import './share';
 
 // item宽度100%
-#item {
+.item {
     width: 100%;
 
     .item-top {
@@ -22,7 +22,7 @@
 }
 
 // item 内容区居中
-#item .content {
+.item .content {
     @extend %share_style;
 }
 
@@ -158,15 +158,15 @@
 }
 
 // 悬浮缩放
-#item .animation-scale {
+.item .animation-scale {
     overflow: hidden;
 }
 
-#item .animation-scale img {
+.item .animation-scale img {
     transition: all 1s;
 }
 
-#item .animation-scale:hover img {
+.item .animation-scale:hover img {
     transform: scale(1.1);
 }
 
@@ -227,7 +227,7 @@
     }
 }
 
-#item .item-bottom {
+.item .item-bottom {
     margin-top: 20px;
     height: 374px;
 
@@ -296,7 +296,7 @@
 }
 
 // 冰箱专区
-#item {
+.item {
     .item-main {
         .same-top {
             height: 588px;
@@ -313,7 +313,7 @@
     }
 }
 
-#item .same-top-right {
+.item .same-top-right {
     float: left;
 
     .same-top-right-1 {
@@ -353,11 +353,11 @@
 }
 
 // 商品阴影
-#item .item-bottom li:hover {
+.item .item-bottom li:hover {
     transition: all .2s linear;
 }
 
-#item .item-bottom li:hover {
+.item .item-bottom li:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
 }
 

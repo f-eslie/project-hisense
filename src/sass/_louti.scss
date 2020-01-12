@@ -1,0 +1,44 @@
+@import './share';
+
+#louti {
+    position: fixed;
+    left: 0px;
+    display: block;
+    z-index: 999;
+
+    li {
+        height: 32px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 32px;
+        // position: relative;
+        cursor: pointer;
+        // padding: px 0;
+        background: rgba(255, 255, 255, 0.75);
+        color: #555;
+
+        span {
+            display: block;
+            box-sizing: border-box;
+            width: 65px;
+            height: 100%;
+            line-height: 32px;
+            margin:0 auto;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .last {
+            background: #5e4a4a;
+            color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .active {
+        background: rgba(0, 0, 0, .8);
+        color: #ccc;
+    }
+    .last-li span{
+        border:0;
+    }
+}
