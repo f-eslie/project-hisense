@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/register.css">
 </head>
+
 <body>
-    
+    <div id="layout">
+        <div class="layout-main">
+            <div class="layout-header">
+                <div>
+                    <a href="javascript:;" class="logo">
+                        <img src="//assets.shop.hisense.com/assets/images/other-images/hisense_logo-eeb25b.png" alt="">
+                    </a>
+
+                </div>
+                <div>
+                    <a href="javascript:;" class="register-header-info">已有账号？直接登录</a>
+
+                </div>
+
+            </div>
+            <div class="register-form">
+                <form action="">
+                    <fieldset></fieldset>
+                    <div class="title">注册海信账号</div>
+                    <div class="control-group mobile-group">
+                        <div class="inner-input-left-icon">手机号码</div>
+                        <input id="mobile-phone" type="text" name="mobile" required="" autocomplete="off">
+                        <span class="note-error note-icon ">
+
+                        <span>请输入正确的手机号</span>
+                        </span>
+                        <span class="note-error-empty note-icon ">
+                            <span>手机号不可为空</span>
+                        </span>
+                    </div>
+                    <div class="control-group picture-code" >
+                        <div class="inner-input-left-icon">密码</div>
+                        <input id="verify-code" type="text" maxlength="4" required="">
+                        <span class="note-error-empty note-icon ">
+                            <span>密码不可为空</span>
+                        </span>
+                        <div class="verify-code-box">
+                            <a href="javascript:;" class="verify-code-mask js-verify-code hide">
+                                <span>换一组</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control-group picture-code" >
+                        <div class="inner-input-left-icon">验证码</div>
+                        <input id="verification-code" type="text" name="code" style="width: 202px;" required="" autocomplete="off">
+                        <button type="button" class="btn get-code" data-delay="60" disabled="disabled">1234</button>
+                        <span class="note-error-empty note-icon ">
+                            <span>验证码不可为空</span>
+                        </span>
+                    </div>
+                    <div class="control-group submit-group">
+                        <div class="controls">
+                            <input class="btn btn-large btn-primary next-step" type="button" disabled="disabled"
+                                value="下一步">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+       青岛海信营销管理有限公司版权所有 鲁ICP备05027830 
+    </div>
 </body>
+
 </html>

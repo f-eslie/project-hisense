@@ -1,0 +1,264 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/_share.scss */
+#footer .content, #footer .footer-bottom .footer-bottom-main {
+  width: 1188px;
+  margin: 0 auto;
+}
+
+/* line 4, ../sass/_footer.scss */
+#footer {
+  width: 100%;
+  background-color: #fff;
+}
+/* line 8, ../sass/_footer.scss */
+#footer .content {
+  height: 410px;
+  padding-top: 20px;
+}
+/* line 15, ../sass/_footer.scss */
+#footer .footer-content-top li {
+  float: left;
+}
+/* line 18, ../sass/_footer.scss */
+#footer .footer-content-top li img {
+  display: block;
+  width: 297px;
+}
+/* line 26, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul {
+  margin-top: 5px;
+}
+/* line 30, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul li {
+  float: left;
+}
+/* line 33, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul li .footer-ul-title {
+  text-align: left;
+  line-height: 22px;
+  color: #262626;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+/* line 42, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul-1 {
+  width: 160px;
+  margin-top: 20px;
+}
+/* line 47, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul-1 li {
+  color: #1e1e1e;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 8px;
+  float: left;
+  width: 100%;
+}
+/* line 57, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul-1 li a {
+  text-decoration: none;
+  font-size: 14px;
+  text-align: left;
+  line-height: 18px;
+  cursor: pointer;
+  color: #777777;
+  box-sizing: border-box;
+}
+/* line 69, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-ul-1 li:hover a {
+  color: #00aaa6;
+}
+/* line 73, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li {
+  float: right;
+  width: 228px;
+  height: 100%;
+  text-align: center;
+}
+/* line 79, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .footer-phone p {
+  text-align: center;
+  line-height: 32px;
+  color: #00aaa6;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+/* line 87, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .phone-desc {
+  margin-top: 4px;
+}
+/* line 91, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .phone-desc p {
+  line-height: 18px;
+  -webkit-font-smoothing: auto;
+  text-align: center;
+  color: #777777;
+  font-size: 14px;
+}
+/* line 99, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .footer-wechat {
+  text-align: center;
+  margin-top: 16px;
+}
+/* line 103, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .footer-wechat div {
+  display: inline-block;
+  margin: 0 auto;
+}
+/* line 109, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .footer-wechat img {
+  display: block;
+  width: 100px;
+}
+/* line 115, ../sass/_footer.scss */
+#footer .footer-content-bottom .footer-last-li .footer-saoma p {
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #777777;
+}
+/* line 125, ../sass/_footer.scss */
+#footer .footer-bottom {
+  width: 100%;
+  background-color: #3F3F3F;
+  height: 60px;
+}
+/* line 130, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-main {
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+/* line 136, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-pic {
+  float: left;
+}
+/* line 140, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-pic img {
+  width: 140px;
+  display: block;
+}
+/* line 145, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-pic:nth-of-type(1) {
+  margin-right: 12px;
+}
+/* line 149, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc {
+  float: left;
+  width: 120px;
+  height: 100%;
+  margin-left: 12px;
+  box-sizing: border-box;
+  padding-top: 2px;
+}
+/* line 157, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc a {
+  text-decoration: none;
+}
+/* line 161, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc p {
+  float: left;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: left;
+}
+/* line 167, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc p a {
+  color: #aaaaaa;
+}
+/* line 172, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc p:nth-of-type(2) {
+  margin-top: 8px;
+}
+/* line 176, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-desc p:hover a {
+  color: #00abaf;
+}
+/* line 181, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-info {
+  float: right;
+  width: 763px;
+  margin-top: 7px;
+  height: 100%;
+}
+/* line 187, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-info p {
+  line-height: 18px;
+  font-size: 14px;
+  text-align: right;
+  color: #777777;
+}
+/* line 192, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-info p span {
+  margin-right: 20px;
+}
+/* line 196, ../sass/_footer.scss */
+#footer .footer-bottom .footer-bottom-info p:nth-of-type(1) {
+  margin-bottom: 5px;
+}

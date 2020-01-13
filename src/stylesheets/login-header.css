@@ -1,0 +1,294 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/_share.scss */
+#header .header-middle .main, #header .second-menu .menu-nav, #top-hover .second-menu .menu-nav {
+  width: 1188px;
+  margin: 0 auto;
+}
+
+/* line 4, ../sass/_header.scss */
+#header {
+  width: 100%;
+}
+/* line 6, ../sass/_header.scss */
+#header .header-main {
+  width: 100%;
+}
+/* line 10, ../sass/_header.scss */
+#header .header-top img {
+  width: 100%;
+  display: block;
+}
+/* line 16, ../sass/_header.scss */
+#header .header-middle {
+  background-color: #444;
+}
+/* line 19, ../sass/_header.scss */
+#header .header-middle .main {
+  height: 36px;
+}
+/* line 24, ../sass/_header.scss */
+#header .header-middle a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 11px;
+}
+/* line 30, ../sass/_header.scss */
+#header .header-middle a:hover {
+  color: #fff;
+}
+
+/* line 37, ../sass/_header.scss */
+#header .left {
+  float: left;
+  line-height: 36px;
+}
+/* line 41, ../sass/_header.scss */
+#header .left .laba {
+  vertical-align: middle;
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+/* line 49, ../sass/_header.scss */
+#header .right {
+  line-height: 36px;
+  float: right;
+}
+/* line 53, ../sass/_header.scss */
+#header .right li {
+  float: left;
+  padding: 0 12px;
+}
+/* line 57, ../sass/_header.scss */
+#header .right li span {
+  font-size: 14px;
+}
+/* line 63, ../sass/_header.scss */
+#header .right .same-color a:hover {
+  color: #00abaf;
+}
+
+/* line 69, ../sass/_header.scss */
+#header, #top-hover .header-bottom {
+  background-color: #fff;
+  position: relative;
+}
+/* line 73, ../sass/_header.scss */
+#header .header-bottom-main, #top-hover .header-bottom .header-bottom-main {
+  width: 1188px;
+  margin: 0 auto;
+  height: 72px;
+  line-height: 72px;
+  overflow: hidden;
+}
+
+/* line 83, ../sass/_header.scss */
+#header .header-bottom-main .header-bottom-left, #top-hover .header-bottom-main .header-bottom-left {
+  float: left;
+  width: 152px;
+  height: 43px;
+  margin-top: 18px;
+}
+/* line 89, ../sass/_header.scss */
+#header .header-bottom-main .header-bottom-left img, #top-hover .header-bottom-main .header-bottom-left img {
+  width: 100%;
+  display: block;
+}
+/* line 95, ../sass/_header.scss */
+#header .header-bottom-main .header-nav, #top-hover .header-bottom-main .header-nav {
+  float: left;
+  width: 1026px;
+}
+/* line 99, ../sass/_header.scss */
+#header .header-bottom-main .header-nav .nav-main li, #top-hover .header-bottom-main .header-nav .nav-main li {
+  float: left;
+  height: 72px;
+  line-height: 76px;
+  padding: 0 18px;
+}
+/* line 105, ../sass/_header.scss */
+#header .header-bottom-main .header-nav .nav-main li a, #top-hover .header-bottom-main .header-nav .nav-main li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  line-height: 72px;
+}
+/* line 114, ../sass/_header.scss */
+#header .header-bottom-main .header-nav .nav-main li:hover a, #top-hover .header-bottom-main .header-nav .nav-main li:hover a {
+  color: #00abaf;
+}
+/* line 118, ../sass/_header.scss */
+#header .header-bottom-main .header-nav .nav-main li:hover .second-menu, #top-hover .header-bottom-main .header-nav .nav-main li:hover .second-menu {
+  display: block;
+  z-index: 99;
+}
+
+/* line 127, ../sass/_header.scss */
+#header .second-menu, #top-hover .second-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -4px;
+  display: none;
+  background-color: #f7f7f7;
+}
+/* line 135, ../sass/_header.scss */
+#header .second-menu .menu-nav, #top-hover .second-menu .menu-nav {
+  height: 288px;
+}
+/* line 139, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list, #top-hover .second-menu .menu-nav .nav-list {
+  width: 800px;
+  float: left;
+  font-size: 12px;
+}
+/* line 144, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list li, #top-hover .second-menu .menu-nav .nav-list li {
+  box-sizing: border-box;
+  float: left;
+  width: 188px;
+  height: 44px;
+  margin-bottom: 24px;
+}
+/* line 151, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list li span, #top-hover .second-menu .menu-nav .nav-list li span {
+  vertical-align: middle;
+  padding-left: 12px;
+  line-height: 44px;
+  color: #646464;
+}
+/* line 158, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list li .icon-arrow, #top-hover .second-menu .menu-nav .nav-list li .icon-arrow {
+  font-size: 14px;
+  padding: 0;
+}
+/* line 163, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list li img, #top-hover .second-menu .menu-nav .nav-list li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 169, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-list li:hover span:nth-of-type(1), #top-hover .second-menu .menu-nav .nav-list li:hover span:nth-of-type(1) {
+  color: #00abaf;
+}
+/* line 175, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods, #top-hover .second-menu .menu-nav .nav-goods {
+  float: right;
+  width: 364px;
+  height: 268px;
+}
+/* line 180, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li, #top-hover .second-menu .menu-nav .nav-goods li {
+  height: 130px;
+  box-sizing: border-box;
+  float: left;
+  width: 180px;
+  margin-top: 4px;
+  text-align: center;
+  padding: 20px 8px;
+  padding-top: 8px;
+  background: #fff;
+}
+/* line 191, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li .goods-img, #top-hover .second-menu .menu-nav .nav-goods li .goods-img {
+  width: 164px;
+  height: 80px;
+}
+/* line 195, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li .goods-img img, #top-hover .second-menu .menu-nav .nav-goods li .goods-img img {
+  width: 80px;
+}
+/* line 200, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li .goods-info, #top-hover .second-menu .menu-nav .nav-goods li .goods-info {
+  width: 164px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #646464;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 210, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li .goods-price, #top-hover .second-menu .menu-nav .nav-goods li .goods-price {
+  font-size: 16px;
+  line-height: 16px;
+  color: #ff143e;
+  font-weight: 700;
+}
+/* line 217, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li:hover .goods-info, #top-hover .second-menu .menu-nav .nav-goods li:hover .goods-info {
+  color: #00abaf;
+}
+/* line 220, ../sass/_header.scss */
+#header .second-menu .menu-nav .nav-goods li:nth-of-type(1), #header .second-menu .menu-nav .nav-goods li:nth-of-type(3), #top-hover .second-menu .menu-nav .nav-goods li:nth-of-type(1), #top-hover .second-menu .menu-nav .nav-goods li:nth-of-type(3) {
+  margin-right: 4px;
+}
+/* line 225, ../sass/_header.scss */
+#header .second-menu .menu-nav a, #top-hover .second-menu .menu-nav a {
+  text-decoration: none;
+}

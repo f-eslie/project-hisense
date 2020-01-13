@@ -82,7 +82,7 @@
         this.btns.eq(this.num).addClass('active').siblings().removeClass('active');
         this.picul.stop(true,true).animate({
             left:-this.liwidth*(this.num+1)
-        },200,function(){
+        },400,function(){
             if(parseInt(that.picul.css('left'))==-that.liwidth*(that.btns.length+1)){
                 that.picul.css('left',-that.liwidth+'px');
                 that.num=0;
@@ -97,7 +97,7 @@
         var that=this;
         that.timer=setInterval(function(){
             that.right.click();
-        },2000)
+        },3500)
     }
     new Banner().init();
 }(jQuery);

@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+fieldset {
+    color: #1e1e1e;
+    line-height: 18px;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: normal;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#layout {
+    display: flex;
+    justify-content: center;
+}
+
+.layout-main {
+    margin-top: 146px;
+    width: 788px;
+    height: 602px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.layout-header {
+    width: 100%;
+    height: 44.67px;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+}
+
+.layout-header .logo img {
+    width: 152px;
+    display: block;
+}
+
+.layout-header .register-header-info {
+
+    line-height: 18px;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: inherit;
+    color: #777;
+    font-size: 14px;
+}
+.register-form{
+    width:100%;
+    height:100%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+form {
+    width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 64px;
+}
+
+.register-form .title {
+    width: 100%;
+    font-size: 24px;
+    color: #262626;
+    margin-bottom: 32px;
+}
+
+.control-group {
+    color: #1e1e1e;
+    line-height: 18px;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.control-group input {
+    white-space: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7px 10px;
+    line-height: 18px;
+    border-radius: 0;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    outline: 0;
+    background: 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 56px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #262626;
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+
+.control-group div {
+    position: relative;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: normal;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 2;
+    position: absolute;
+    opacity: .5;
+    font-size: 16px;
+    color: #262626;
+    line-height: 56px;
+    display: block;
+    top: 0;
+    /* left: 0; */
+    transition: top .8s, left .8s, transform .8s, -webkit-transform .8s, -o-transform .8s;
+}
+
+.control-group .note-icon {
+    position: absolute;
+    bottom: -14px;
+    display: none;
+}
+
+.control-group .note-icon span {
+    width: 320px;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: normal;
+    text-align: left;
+    line-height: 16px;
+    color: #F26522;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.control-group .verify-code-box {
+    right: 50px;
+    display: none;
+}
+
+.control-group .get-code {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    line-height: 12px;
+    vertical-align: baseline;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0;
+    white-space: nowrap;
+    user-select: none;
+    border-color: transparent;
+    cursor: default !important;
+    position: absolute;
+    padding: 12px 16px;
+    right: 1px;
+    font-size: 14px;
+    top: auto;
+    bottom: 0;
+    background: #F7F7F7;
+    color: #777;
+}
+
+.submit-group {
+    line-height: 18px;
+    white-space: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+    margin-top: 40px;
+}
+
+.submit-group .controls {
+    width:100%;
+    height:100%;
+    line-height: 18px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    text-align: left;
+    margin-left: 0;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.submit-group input {
+    background-image: none;
+    padding: 9px 16px;
+    line-height: 12px;
+    vertical-align: baseline;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 0;
+    user-select: none;
+    height: 38px;
+    background-color: #999;
+    border-color: transparent;
+    cursor: default !important;
+    padding-left: 0;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+}
+#footer{
+    width:100%;
+    height:56px;
+    text-align: center;
+    color: #8b8b8b;
+    font-size: 12px;
+    line-height: 72px;
+}
