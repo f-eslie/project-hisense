@@ -25,15 +25,57 @@ li {
 #content .detail-left {
     width: 550px;
     height: 100%;
+    position: relative;
+}
+#content .detail-left .spic{
+    position: relative;
+    cursor: move;
 }
 
-#content .detail-left .bf {
+#content .detail-left .sf{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    position: absolute;
+    width: 273px;
+    height: 273px;
+    opacity: .6;
+    top:0;
     display: none;
+
+}
+#content .detail-left .bf {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width:552px;
+    height:552px;
+    display: none;
+    position: fixed;
+    right:80px;
+    bottom:0;
+    overflow: hidden;
+}
+#content .detail-left .bf img{
+    width:1100px;
+    height:1100px;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
 }
 
 #content .detail-left .spic img {
     width: 550px;
     display: block;
+}
+#content .detail-left .pics-wrap-main {
+    position: relative;
+    width: 476px;
+    height:88px;
+    position: relative;
+    margin: 14px auto;
+    box-sizing: content-box;
+
 }
 
 #content .detail-left .pics-wrap {
@@ -45,8 +87,9 @@ li {
     zoom: 1;
     min-height: 30px;
     box-sizing: content-box;
-    margin: 14px auto;
-    width: 476px;
+    width: 470px;
+    height:88px;
+    overflow: hidden;
 }
 
 .pics-wrap ul {
@@ -65,9 +108,26 @@ li {
     padding-top: 0;
     margin-top: 0;
     transition: all ease .5s;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.pics-wrap ul li{
+    width:96px;
+    text-align: center;
+    float:left;
+    box-sizing: border-box;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+
+}
+.pics-wrap ul li:nth-of-type(1){
+    border: 1px solid #00aaa6;
 }
 
+
 .pics-wrap ul img {
+    display: block;
     line-height: 0;
     white-space: nowrap;
     list-style: none;
@@ -76,11 +136,10 @@ li {
     cursor: pointer;
     box-sizing: border-box;
     width: 88px;
-    height: 88px;
-    border: 1px solid #00aaa6;
+    height: 86px;
 }
 
-.pics-wrap .arrows {
+.pics-wrap-main .arrows {
     text-decoration: inherit;
     box-sizing: content-box;
     position: absolute;
@@ -101,12 +160,13 @@ li {
     font-size: 22px;
     cursor: pointer;
 }
-.pics-wrap .lt {
+.pics-wrap-main .lt {
     left: -40px;
+    cursor: default;
 }
 
-.pics-wrap .gt {
-    right: -30px;
+.pics-wrap-main .gt {
+    right: -40px;
 }
 
 
@@ -327,6 +387,11 @@ li {
     padding: 0;
     background-color: #d9161c;
     border: none;
+    outline: none;
+    opacity: .6;
+}
+.btns button:hover{
+    opacity: 1;
 }
 
 .btns button:nth-of-type(2) {

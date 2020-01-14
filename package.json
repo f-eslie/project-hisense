@@ -1,0 +1,29 @@
+{
+  "name": "project-hisense",
+  "version": "1.0.0",
+  "description": "海信商城项目",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --progress --display-modules --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-eslie/project-hisense.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-eslie/project-hisense/issues"
+  },
+  "homepage": "https://github.com/f-eslie/project-hisense#readme",
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

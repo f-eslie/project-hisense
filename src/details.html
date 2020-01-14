@@ -26,12 +26,14 @@
                 <div class="bf">
                     <img src="" alt="">
                 </div>
-                <div class="pics-wrap">
-                    <ul>
-                        <li>
-                            <img src="//img.shop.hisense.com/2019/05/13/155d7c4c-fe8b-477c-8000-7ee4f8138b5b.png?x-oss-process=image/resize,m_mfit,h_88,w_88/sharpen,100" alt="">
-                        </li>
-                    </ul>
+                <div class="pics-wrap-main">
+                    <div class="pics-wrap">
+                        <ul>
+                            <!-- <li>
+                                <img src="//img.shop.hisense.com/2019/05/13/155d7c4c-fe8b-477c-8000-7ee4f8138b5b.png?x-oss-process=image/resize,m_mfit,h_88,w_88/sharpen,100" alt="">
+                            </li> -->
+                        </ul>
+                    </div>  
                     <a href="javascript:;" class="lt arrows">&lt;</a>
                     <a href="javascript:;" class="gt arrows">&gt;</a>
                 </div>
@@ -40,7 +42,7 @@
                 <h1 title="【HZ55A8】55英寸/OLED超画质/4K超高清/智能液晶电视" id="js-item-name" class="has-advertise">
                     【HZ55A8】55英寸/OLED超画质/4K超高清/智能液晶电视</h1>
                 <div class="details-goods-introduce">
-                    <p>只见美景，不留残影！ /</p>
+                    <p class="g-desc">只见美景，不留残影！ /</p>
                     <p>海信A8电视历时20载，通过六重防残影科技，解决OLED残影烧屏的行业难题。让黑色有层次，让暗部有细节。结合3.7mm的极薄机身，成就客厅的艺术。</p>
                 </div>
                 <div class="details-goods-desc">
@@ -77,14 +79,14 @@
                     </div>
                     <div class="goods-num-bottom">
                         <div class="jian num-change">-</div>
-                        <input type="text" value="1">
+                        <input type="text" value="1" class="num-input">
                         <div class="jia num-change">+</div>
                         <div class="kucun">库存紧张</div>
                     </div>
                 </div>
                 <div class="btns">
                     <button>立即购买</button>
-                    <button>加入购物车</button>
+                    <button class="add-cart">加入购物车</button>
                 </div>
             </div>
         </div>
@@ -153,8 +155,7 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./javascripts/details.js"></script>
+    <script src="../dist/bundle.js" defer async="true" id="current" page="details"></script>
 
 </body>
 

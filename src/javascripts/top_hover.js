@@ -1,4 +1,4 @@
-! function ($) {
+function topHover() {
     loadHover();
     //页面移出1000px，显示box
     $(window).on('scroll', function () {
@@ -16,4 +16,8 @@
             });
         }
     }
-}(jQuery);
+}
+
+export {
+    topHover
+}
