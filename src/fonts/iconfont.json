@@ -41,6 +41,13 @@
       "unicode_decimal": 59244
     },
     {
+      "icon_id": "766834",
+      "name": "下箭头",
+      "font_class": "downarrow",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
       "icon_id": "781683",
       "name": "人民币2-01",
       "font_class": "renminbi201",

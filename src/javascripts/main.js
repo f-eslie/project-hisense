@@ -1,6 +1,12 @@
-
-
 import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../stylesheets/index.css';
+import '../stylesheets/details.css';
+import '../stylesheets/cart.css';
+import '../fonts/iconfont.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
 import {
     swiper
 } from './banner.js';
@@ -28,6 +34,13 @@ import {
 import {
     storage
 } from './localstorage.js';
+import {
+    Cart
+} from './cart.js';
+import {
+    Address
+} from './address.js';
+
 
 let currentPage = $('#current').attr('page');
 if (currentPage === 'index') {
@@ -51,4 +64,14 @@ if (currentPage === 'index') {
     fdj();
     // 本地存储
     storage();
+}
+else if (currentPage === 'cart') {
+    // 加载头部
+    topRender();
+    // 加载底部
+    bottomRender();
+    // 渲染
+    new Cart().init();
+    // 地址三级菜单
+    new Address().init();
 }

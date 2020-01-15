@@ -5,230 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./stylesheets/cart.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
-    <form action="" method="post" class="hide" id="js-cart-form">
-        <input type="hidden" name="data">
-        <input type="hidden" name="channel" value="1">
-        <input type="hidden" name="_csrf" value="XET3zr7h-mg_vQoVGBUZSop_llfP24V5cq0A">
-        <input type="hidden" name="gift">
-    </form>
-    <div class="fall-item-num">
-        <div class="fall-item-text">
-            <i class="iconfont icon-tishi"></i>有<span class="js-fall-num">0</span>件商品降价了！快去看看
-        </div>
-        <div class="fall-item-close"><i class="iconfont icon-ic-close"></i></div>
-    </div>
-    <div class="shopping-cart-address">
-        <span class="address-port">配送至</span>
-        <span class="address-body">
-            <div class="js-comp common-address-select-group-container eve-component"
-                data-comp-path="common/hisense_address_group">
-                <div class="common-address-group-text js-text">
-                    <a class="content cutwords">
-                        <span>山东</span><span>青岛市</span><span>市南区</span><span></span>
-                    </a>
-                    <i class="iconfont icon-ic-drop"></i>
-                    <div class="attach hide js-attach"></div>
-                </div>
-                <div class="common-address-group-area js-area">
-                    <ul class="common-address-tab clearfix js-tab">
-                        <li data-level="1" data-id="370000"><a class="cutwords" href="javascript:;">山东</a><i
-                                class="iconfont icon-ic-drop"></i></li>
-                        <li data-level="2" data-id="370200"><a class="cutwords" href="javascript:;">青岛市</a><i
-                                class="iconfont icon-ic-drop"></i></li>
-                        <li class="active" data-level="3" data-id="370202"><a class="cutwords"
-                                href="javascript:;">市南区</a><i class="iconfont icon-ic-drop"></i></li>
+    <div id="header"></div>
+    <div id="main">
+        <div class="cart-main">
+            <div class="cart-address">
+                <div class="text-1">配送至</div>
+                <div class="text-2">
+                    <a href="javascript:;">山东青岛市市南区<span class="iconfont icon-downarrow arrow1" style="margin-left:10px"></span></a>
+                    </div>
+                
+                <div class="address-menu">
+                    <ul class="address-title">
+                        <li class="provice">
+                            <a href="javascript:;">
+                                <span class="pro-text">山东</span>
+                                <span class="iconfont icon-downarrow" ></span>
+                                <span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="city">
+                            <a href="javascript:;">
+                                <span class="pro-text">青岛市</span>
+                                <span class="iconfont icon-downarrow" ></span>
+                                <span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="country">
+                            <a href="javascript:;">
+                                <span class="pro-text">市南区</span>
+                                <span class="iconfont icon-downarrow" ></span>
+                            </a>
+                        </li>
                     </ul>
-                    <ul class="common-address-content js-content" data-level="1" data-list=""></ul>
-                    <ul class="common-address-content js-content" data-level="2" data-list=""></ul>
-                    <ul class="common-address-content js-content" data-level="3" data-list=""></ul>
+                    <ul class="address-content">
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="address-content address-city"></ul>
+                    <ul class="address-content address-country"></ul> -->
                 </div>
             </div>
-        </span>
-        <div class="address-get">
-            <span data-shop="1" data-index="0" class="show-coupon js-show-coupon hide">
-                <img src="./我的购物车_files/coupon-01528d.png" class="icon-ic-coupon">
-                领取优惠券
-                <i class="iconfont icon-ic-drop"></i>
-            </span>
-        </div>
-    </div>
-
-    <table class="table table-horizontal center-tex shopping-cart-table ">
-        <thead>
-            <tr class="table-tr-title">
-                <th width="56"><input type="checkbox" class="input-checkbox js-batch-select" autocomplete="off"></th>
-                <th width="640">
-                    <span class="js-batch-select item-logo-th-span">全选</span>
-                    <span class="cart-title">商品信息</span>
-                </th>
-                <th width="150">价格(元)</th>
-                <th width="175">数量</th>
-                <th width="130">小计(元)</th>
-                <th width="53">操作</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="item-tr shop-discount " data-site="1" data-id="2688" data-itemid="2683" data-index="0"
-                data-gift-promotion="">
-                <td></td>
-                <td>
-                    <div class="item-shop-discount-container">
-                        <div class="item-shop-discount-title js-discount-title">
-                            <span class="item-shop-discount-type">
-                                满减
-                                <i class="iconfont icon-ic-drop"></i>
-                            </span>
-                            <span class="item-shop-discount-txt js-item-txt">
-                                购满999元,
-                                可减
-                                20元
-                            </span>
-                            <a class="link-add-order" href="http://www.hisense.com/search?pids=30500">去凑单<i
-                                    class="iconfont icon-ic-skip-right"></i></a>
-                            <a class="btn btn-small more-discount-items js-more-discount hide"></a>
-                        </div>
-                        <ul class="js-ticket-list ticket-list" style="display: none;">
-                            <li>
-                                购满999元,
-                                减
-                                20元
-                                <a class="link-add-order" href="http://www.hisense.com/search?pids=30500">去凑单</a>
-                            </li>
-                        </ul>
-                        <ul class="js-gift-list gift-list" style="display: none;">
-
-                        </ul>
+            <div class="carts">
+                <div class="first-li">
+                    <div class="checkbox">
+                        <input type="checkbox" checked class="all-sel2 all-sel">
                     </div>
-                </td>
-            </tr>
-            <tr class="item-tr unenough" data-site="1" data-id="2688" data-itemid="2683" data-index="0"
-                data-gift-promotion="">
-                <td class="check-td v-middle">
-                    <input type="checkbox" class="input-checkbox js-select-item" disabled="">
-                </td>
-                <td class="left-text" data-value="null" data-gift="null">
-
-                    <div class="clearfix">
-                        <div class="item-logo">
-                            <a href="http://www.hisense.com/items/2683">
-                                <img data-original="//img.shop.hisense.com/2019/06/12/3b65c52b-62f7-4a60-9aa7-106db98e69c4.png?x-oss-process=image/resize,m_mfit,h_100,w_100/sharpen,100"
-                                    width="78" height="78" src="./我的购物车_files/3b65c52b-62f7-4a60-9aa7-106db98e69c4.png">
-                            </a>
-                        </div>
-                        <div class="shop-cart-name" data="">
-                            <div class="item-description cutwords">
-                                <span><a href="http://www.hisense.com/items/2683">科龙1.5匹/一级能效/变频/柔风感系列/空调挂机</a></span>
-                                <br>
-                                <span class="sku-attrs"></span>
-                            </div>
-                        </div>
+                    <div class="first-li-middle">
+                        <div >全选</div>
+                        <a>商品信息</a>
                     </div>
-                    <span class="unenough-cont-text">无货 请更换地址或设置到货提醒</span>
-                </td>
-                <td>
-                    <div class="flex-container">
-                        <div>
-                            <div class="css-price">
-                                <span class="">￥</span><span class="price ">1799</span>
-                            </div>
-                            <div class="equalsPrice">
-                            </div>
-                        </div>
+                    <div class="first-li-price">价格(元)</div>
+                    <div class="first-li-num">
+                        数量
                     </div>
-                </td>
-                <td>
-                    <div class="flex-container">
-                        <div>
-                            <div class="input-amount group-small" data-min="1" data-max="0"
-                                data-purchase-limit="{&quot;purchase.limit.quantity&quot;:{&quot;id&quot;:170,&quot;terminal&quot;:null,&quot;key&quot;:&quot;purchase.limit.quantity&quot;,&quot;value&quot;:&quot;2&quot;,&quot;description&quot;:&quot;购买数量限制&quot;,&quot;createdAt&quot;:1555725606000,&quot;updatedAt&quot;:1555725606000}}"
-                                data-promotion="[]">
-                                <a href="javascript:void(0);" class="minus  disabled cart-disabled">-</a>
-                                <input type="number" class="count-number" value="1" data-old="1" data-init="1"
-                                    disabled="">
-                                <a href="javascript:void(0);" class="plus  disabled cart-disabled">+</a>
-                            </div>
-                            <div class="overload">已超过最大购买限额</div>
-                        </div>
+                    <div class="first-li-count">
+                        小计(元)
                     </div>
-                </td>
-                <td>
-                    <div class="flex-container">
-                        <div class="css-price"><span class="corange">￥</span><span
-                                class="item-subtotal currency">1799</span>
-                            <div></div>
-                        </div>
+                    <div class="first-li-op">
+                        操作
                     </div>
-                </td>
-                <td class="td-last">
-                    <div class="flex-container">
-                        <a class="js-delete-item-new" data-id="2688">
-                            删除
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-horizontal center-tex shopping-cart-table off-shelf" style="display: none;">
-        <thead>
-            <tr class="table-tr-title">
-                <th width="53"> </th>
-                <th width="788">
-                    失效商品
-                </th>
-                <th width="120">状态</th>
-                <th width="190">
-                    <div class="js-delete-all-unavailable">删除所有失效商品</div>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-    </div>
-
-    <div class="shopping-cart-foot block float-foot" style="left: 31.6667px; top: 503px; z-index: 102;">
-        <div class="foot-item-container"><span class="btn-left disabled">
-                <i class="icon-feebas icon-feebas-prev"></i>
-            </span>
-            <div class="items-container">
+                </div>
                 <ul>
+                    <!-- <li class="first-li">
+                        <div class="checkbox">
+                            <input type="checkbox" checked class="all-sel2">
+                        </div>
+                        <div class="first-li-middle">
+                            <div >全选</div>
+                            <a>商品信息</a>
+                        </div>
+                        <div class="first-li-price">价格(元)</div>
+                        <div class="first-li-num">
+                            数量
+                        </div>
+                        <div class="first-li-count">
+                            小计(元)
+                        </div>
+                        <div class="first-li-op">
+                            操作
+                        </div>
+                    </li> -->
+                    <!-- <li class="goods-li first-li">
+                        <div class="checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="first-li-middle">
+                            <div>
+                                <img src="//img.shop.hisense.com/2019/05/29/4fc7c53d-4989-4575-aae6-04321386ae7b.png?x-oss-process=image/resize,m_mfit,h_100,w_100/sharpen,100" alt="" class="goods-url">
+                            </div>
+                            <a class="goods-title">55英寸/超高色域/AI声控/杜比全景声/超薄全面屏电视</a>
+                        </div>
+                        <div class="first-li-price goods-price">￥2555</div>
+                        <div class="first-li-num">
+                            <a href="javascript:;" class="jian">-</a>
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="jia">+</a>
+                        </div>
+                        <div class="first-li-count">
+                            ￥3599
+                        </div>
+                        <div class="first-li-op goods-del">
+                            删除
+                        </div>
+                    </li> -->
                 </ul>
             </div>
-            <span class="btn-right disabled">
-                <i class="icon-feebas icon-feebas-next"></i>
-            </span>
-        </div>
-        <div class="foot-container">
-            <fieldset>
-                <div class="cart-operate">
-                    <label for="select-batch"><input type="checkbox" id="select-batch"
-                            class="input-checkbox js-batch-select" autocomplete="off">&nbsp;&nbsp;&nbsp;全选</label>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="javascript:void(0);" class="js-delete-batch-new">
-                        删除选中商品
+            <div class="goods-cart-bottom">
+                <div class="cart-bottom-left">
+                    <label class="checkbox">
+                        <input type="checkbox" class="all-checkbox all-sel1 all-sel" checked>
+                        <span class="all-text">全选</span>
+                    </label>
+                    <a class="dele-checked">
+                        删除选中的商品
                     </a>
                 </div>
-                <div class="cart-result">
-                    <span class="total-item">已选<span class="total-count">0</span>种商品</span>
-                    <span class="total-price">
-                        合计(不含运费)：&nbsp;&nbsp;&nbsp;<span class="css-price"><span>￥</span><span
-                                class="currency css-price">0</span></span>
-                    </span>
+                <div class="cart-bottom-right">
+                    <div class="bottom-right-text1">
+                        已选中<span>1</span>件商品&nbsp;合计(不含运费)：
+                    </div>
+                    <div class="bottom-right-price goods-price">
+                        ￥3599
+                    </div>
+                    <div class="jiesuan">
+                        <a href="javascript:;">
+                            去结算
+                        </a>
+                    </div>
                 </div>
-                <div class="shopping-cart-foot-operate" data-userid="" data-orgid="">
-                    <button class="btn btn-primary js-cart-submit" disabled="disabled">去结算</button>
-                </div>
-            </fieldset>
+            </div>
+
         </div>
     </div>
-    </div>
-    </div>
+    <div id="footer"></div>
+
+    <script src="../dist/bundle.js" defer async="true" page="cart" id="current"></script>
 
 </body>
 

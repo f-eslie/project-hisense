@@ -1,6 +1,6 @@
 function bottomRender(){
     $.ajax({
-        url:'index1.html',
+        url:'index.html',
         dataType:'html'
     }).done((data)=>{
        let value2=$(data).find('.footre-main');

@@ -1,6 +1,6 @@
 function topRender(){
     $.ajax({
-        url:'index1.html',
+        url:'index.html',
         dataType:'html'
     }).done((data)=>{
        let value1 = $(data).find('.header-main');
