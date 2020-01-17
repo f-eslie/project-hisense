@@ -267,14 +267,30 @@ padding:0 10px;
 
 /* 地址 */
 .address-menu{
+    -webkit-tap-highlight-color: transparent;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,"Helvetica Neue",Arial,Helvetica,sans-serif;
+    -webkit-font-smoothing: auto;
+    line-height: 52px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 495px;
+    padding: 12px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 2px 4px #aaa;
+    overflow: hidden;
+    display: block;
+
     position: absolute;
     padding:12px;
     left:64px;
-    bottom:-421px;
+    top:40px;
     background-color: #fff;
     display: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0,.2);
 }
+
 .address-menu .address-title{
     width:471px;
     display: flex;
@@ -298,10 +314,12 @@ padding:0 10px;
 }
 
 .address-menu .address-title li a{
+    display: inline-block;
     height:36px;
-    line-height: 36px;
+    line-height: 17px;
     padding: 0 20px;
     box-sizing: border-box;
+    vertical-align: middle;
 }
 
 .address-menu .address-title li .line{
@@ -340,6 +358,5 @@ margin-bottom: 16px;
 .address-menu .address-content li a{
     font-size: 14px;
 }
-
 
 

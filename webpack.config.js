@@ -75,6 +75,26 @@ module.exports = {
                 collapseWhitespace: true //去掉空格。
             }
         }),
+        new HtmlWebpackPlugin({
+            // title: '淘宝购物车详情页',
+            filename: "login.html",
+            template: "./src/login.html",
+            chunks: ["login", "vendor"],
+            minify: { //压缩html
+                removeComment: true, //去掉注释
+                collapseWhitespace: true //去掉空格。
+            }
+        }),
+        new HtmlWebpackPlugin({
+            // title: '淘宝购物车展示列表',
+            filename: "register.html",
+            template: "./src/register.html",
+            chunks: ["register", "vendor"],
+            minify: { //压缩html
+                removeComment: true, //去掉注释
+                collapseWhitespace: true //去掉空格。
+            }
+        }),
         new webpack.ProvidePlugin({
             Popper: ['popper.js', 'default'],
         })

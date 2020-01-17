@@ -273,8 +273,9 @@ li {
 
 }
 
-.address .address-top a {
+.address .address-top>a {
     margin-left: 50px;
+    text-decoration: none;
 }
 
 .address .address-top span {
@@ -300,7 +301,7 @@ li {
     color: #777;
     font-size: 14px;
     margin-top: 6px;
-    margin-left: 51px;
+    margin-left: 61px;
 }
 
 .address .goods-num {

@@ -12,12 +12,14 @@ a {
 li {
     list-style: none;
 }
-body{
-    width:100%;
+
+body {
+    width: 100%;
 }
+
 #login-main {
     position: relative;
-    max-width:1300px;
+    max-width: 1300px;
     line-height: 18px;
     font-size: 14px;
     box-sizing: border-box;
@@ -26,7 +28,7 @@ body{
     width: 100%;
     height: 600px;
     background: url(//img.shop.hisense.com/2019/04/10/7bd4e8a7-d132-4c9b-b517-2f3d2e890606.jpg) no-repeat center center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .login-content {
@@ -42,8 +44,8 @@ body{
     width: 384px;
     height: 522px;
     right: 60px;
-    margin-top:30px;
-    margin:0 auto;
+    margin-top: 30px;
+    margin: 0 auto;
     position: absolute;
     right: 110px;
     top: 40px;
@@ -327,55 +329,61 @@ transition: top .8s,left .8s,transform .8s,-webkit-transform .8s,-o-transform .8
     height: 40px;
     font-size: 14px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #00aaa7af;
 }
-.input-login-footer{
-font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,"Helvetica Neue",Arial,Helvetica,sans-serif;
-white-space: normal;
-box-sizing: border-box;
-background-color: #FFF;
-padding: 16px 0 24px;
-line-height: 16px;
-text-align: center;
-color: #646464;
-font-size: 12px;
+
+.input-login-footer {
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: normal;
+    box-sizing: border-box;
+    background-color: #FFF;
+    padding: 16px 0 24px;
+    line-height: 16px;
+    text-align: center;
+    color: #646464;
+    font-size: 12px;
 }
-.label-tip{
+
+.label-tip {
     -webkit-tap-highlight-color: transparent;
-font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,"Helvetica Neue",Arial,Helvetica,sans-serif;
--webkit-font-smoothing: auto;
-white-space: normal;
-line-height: 16px;
-text-align: center;
-box-sizing: border-box;
-font-size: 12px;
-color: #CCC;
-margin-bottom: 20px;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: auto;
+    white-space: normal;
+    line-height: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #CCC;
+    margin-bottom: 20px;
 }
-.input-login-footer a{
+
+.input-login-footer a {
     -webkit-tap-highlight-color: transparent;
-font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,"Helvetica Neue",Arial,Helvetica,sans-serif;
--webkit-font-smoothing: auto;
-white-space: normal;
-line-height: 16px;
-text-align: center;
-font-size: 12px;
-box-sizing: border-box;
-cursor: pointer;
-text-decoration: inherit;
-color: #1e1e1e;
-display: inline-block;
-vertical-align: middle;
-zoom: 1;
-padding: 0 10px;
-opacity: 0.6;
+    font-family: PingFangSC-Regular, "Microsoft YaHei", simsun, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: auto;
+    white-space: normal;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: inherit;
+    color: #1e1e1e;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0 10px;
+    opacity: 0.6;
 }
-#footer{
-    width:100%;
-    height:156px;
+
+#footer {
+    width: 100%;
+    height: 156px;
     line-height: 156px;
     text-align: center;
-    font-size:14px;
-    color:#999;
+    font-size: 14px;
+    color: #999;
 }
+

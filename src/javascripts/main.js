@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../stylesheets/index.css';
 import '../stylesheets/details.css';
 import '../stylesheets/cart.css';
+import '../stylesheets/login.css';
+import '../stylesheets/register.css';
+
 import '../fonts/iconfont.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -40,6 +43,9 @@ import {
 import {
     Address
 } from './address.js';
+import {
+    Register
+} from './register.js';
 
 
 let currentPage = $('#current').attr('page');
@@ -64,8 +70,10 @@ if (currentPage === 'index') {
     fdj();
     // 本地存储
     storage();
-}
-else if (currentPage === 'cart') {
+    // 地址三级菜单
+    new Address().init();
+
+} else if (currentPage === 'cart') {
     // 加载头部
     topRender();
     // 加载底部
@@ -75,3 +83,4 @@ else if (currentPage === 'cart') {
     // 地址三级菜单
     new Address().init();
 }
+new Register().init()
