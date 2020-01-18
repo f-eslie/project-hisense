@@ -46,6 +46,7 @@ import {
 import {
     Register
 } from './register.js';
+import { Login } from './login';
 
 
 let currentPage = $('#current').attr('page');
@@ -82,5 +83,11 @@ if (currentPage === 'index') {
     new Cart().init();
     // 地址三级菜单
     new Address().init();
+}else if (currentPage === 'register') {
+    new Register().init();
+}else if (currentPage === 'login') {
+    // 加载头部
+    topRender();
+
+    new Login().init();
 }
-new Register().init()

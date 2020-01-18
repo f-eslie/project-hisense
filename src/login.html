@@ -24,21 +24,23 @@
                     </li>
                 </ul>
                 <div class="tab-contents">
-                    <form action="" class="tab-content">
+                    <form action="'http://10.31.152.29/project-hisense/php/getpsw.php" class="tab-content" method="post" name="form">
                         <fieldset>
                             <div class="login-info">
-                                <div class="login-phone">
-                                    <span class="phone-info">账号/邮箱/手机号</span>
-                                    <input type="text" class="phone-input">
-                                    <span class="phone-error">
+                                <div class="login-phone input-group">
+                                    <span class="phone-info input-info">账号/邮箱/手机号</span>
+                                    <input type="text" class="phone-input" name="username">
+                                    <div class="input-tip">请输入用户账号</div>
+                                    <span class="phone-error input-error">
                                         <span>请输入正确的手机号</span>
                                     </span>
                                 </div>
-                                <div class="login-psw">
-                                    <span class="psw-info">密码</span>
-                                    <input type="text" class="psw-input">
-                                    <span class="psw-error">
-                                        <span>请输入6-20位数字大小写字母组合密码</span>
+                                <div class="login-psw input-group">
+                                    <span class="psw-info input-info">密码</span>
+                                    <input type="text" class="psw-input" name="psw">
+                                    <div class="input-tip">请输入6-20位数字大小写字母组合密码</div>
+                                    <span class="psw-error input-error">
+                                        <span></span>
                                     </span>
                                 </div>
                             </div>
@@ -62,10 +64,10 @@
                     <div class="input-login-footer">
                         <div class="label-tip">可选择第三方登录方式</div>
                         <a href="javascript:;" class="weixin-triple"">
-                            <span class="iconfont icon-weixin"></span>
+                            <span class=" iconfont icon-weixin"></span>
                         </a>
                         <a href="javascript:;"">
-                            <span class="iconfont icon-zhifubao"></span>
+                            <span class=" iconfont icon-zhifubao"></span>
                         </a>
                     </div>
                 </div>
@@ -73,7 +75,7 @@
         </div>
     </div>
 
-    <div id="footer">青岛海信营销管理有限公司版权所有&nbsp;网站备案/许可证号鲁ICP备05027830</div>
+    <div id="footer-login">青岛海信营销管理有限公司版权所有&nbsp;网站备案/许可证号鲁ICP备05027830</div>
 
 
     <script src="../dist/bundle.js" defer async="true" page="login" id="current"></script>

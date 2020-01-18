@@ -24,12 +24,12 @@
                 </div>
 
             </div>
-            <div class="register-form1 register-form" >
+            <div class="register-form1 register-form">
                 <form action="">
                     <fieldset></fieldset>
                     <div class="title">注册海信账号</div>
                     <div class="control-group mobile-group">
-                        <div class="input-info">手机号码</div>
+                        <div class="input-info">手机号码/用户名</div>
                         <input class="phone-input" type="text" name="mobile">
 
                         <div class="input-tip">注册之后，你可以使用该手机登录或找回密码</div>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="control-group submit-group">
                         <div class="controls">
-                            <div class="submit-btn" >下一步</div>
+                            <div class="submit-btn submit-btn1" >下一步</div>
                         </div>
                     </div>
                 </form>
@@ -58,32 +58,34 @@
                     <fieldset></fieldset>
                     <div class="title">设置密码</div>
                     <div class="control-group psw-group">
-                        <div class="inner-input-left-icon set-psw">设置密码</div>
-                        <input class="first-psw" type="password" name="first-psw">
+                        <div class="psw-info input-info">设置密码</div>
+                        <input class="first-psw" type="password">
+                        
+                        <span class="input-tip">建议使用字母、数字和符号两种及以上的组合，6-20个字符</span>
+                        </span>
                         <div class="psw-jibie">
                             <div class="ruo psw-jibies">弱</div>
                             <div class="zhong psw-jibies">中</div>
                             <div class="qiang psw-jibies">强</div>
                         </div>
 
-                        <span class="input-tip">建议使用字母、数字和符号两种及以上的组合，6-20个字符</span>
-                        </span>
-                        <span class="note-error-empty note-icon ">
+                        <span class="psw-end note-error-empty note-icon">
                             <span>请输入二次确认密码
                             </span>
                         </span>
                     </div>
                     <div class="control-group second-psw-group" >
-                        <div class="inner-input-left-icon second-psw">确认密码</div>
-                        <input id="verification-code" type="password" name="second-psw">
+                        <div class="input-info queren-psw">确认密码</div>
+                        <input id="verification-code" type="password" name="second-psw" class="second-psw">
                         <span class="note-error-empty note-icon ">
                             <span>两次密码不一致</span>
                         </span>
                     </div>
                     <div class="control-group submit-group">
                         <div class="controls">
-                            <input class="submit-btn" type="submit" disabled="disabled"
-                                value="注册">
+                            <div class="submit-btn submit-btn2">
+                                注册
+                            </div>
                         </div>
                     </div>
                 </form>

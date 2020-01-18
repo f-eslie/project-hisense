@@ -36,14 +36,37 @@
 
 #header .left {
     float: left;
-    line-height: 36px;
-
+    // line-height: 36px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    a{
+        width: 30px;
+    }
     .laba {
+        height:100;
         vertical-align: middle;
         margin-left: 30px;
         font-size: $main_font_size - 2;
+        color: #ccc;
     }
-
+    .huanying{
+        visibility: hidden;
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:100%;
+        font-size: $main_font_size - 4;
+        color: #ccc;
+        a{
+            text-decoration: underline;
+            color: rgba(221, 221, 221, 0.76);
+            margin-left:10px;
+        }
+    }
 }
 
 #header .right {

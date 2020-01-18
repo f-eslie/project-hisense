@@ -268,8 +268,9 @@ body {
     padding: 2px 0;
     font-size: 12px;
     line-height: 12px;
-    color: #fff;
+    color: #bbb;
     background-color: #ddd;
+    /* color: rgba(0, 128, 0, 0.651); */
 }
 
 .register-form .input-tip {
