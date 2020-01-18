@@ -92,6 +92,7 @@ class Cart {
                         `;
             }
         }
+        this.goodsul.html('');
         this.goodsul.append(strhtml);
         if ($('.goods-li').length === 0) {
             this.goodsul.html('暂无商品');

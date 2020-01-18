@@ -1,3 +1,5 @@
+import { Search } from './search.js';
+
 function render() {
     class Render {
         constructor() {
@@ -23,6 +25,9 @@ function render() {
                 })
                 // 点击跳转
                 this.changePage();
+
+                // 
+                new Search().init();
             })
         }
         changePage(){

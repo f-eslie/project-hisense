@@ -47,8 +47,11 @@ import {
     Register
 } from './register.js';
 import { Login } from './login';
+import {
+    User
+} from './user.js';
 
-
+new User().init();
 let currentPage = $('#current').attr('page');
 if (currentPage === 'index') {
     // 轮播图
@@ -90,4 +93,5 @@ if (currentPage === 'index') {
     topRender();
 
     new Login().init();
+
 }

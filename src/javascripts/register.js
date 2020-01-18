@@ -412,7 +412,7 @@ class Register {
                         psw: this.inputs.eq(2).val()
                     }
                 }).done(()=>{
-                    location='http://localhost/project-hisense/dist/login.html';
+                    location='http://10.31.152.29/project-hisense/dist/login.html';
                     this.inputs.val('');
                 })
             }

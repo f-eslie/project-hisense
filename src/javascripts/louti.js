@@ -3,7 +3,7 @@ function louti() {
         constructor() {
             this.items = $('.item');
             this.louti = $('#louti');
-
+            this.top = $('.come-top');
         }
         init() {
             // 获取屏幕宽度
@@ -24,10 +24,16 @@ function louti() {
             this.loadLouti();
 
             // 滚动条滚动判断
-            $(window).on('scroll', ()=> {
+            $(window).on('scroll', () => {
                 this.loadLouti();
             });
 
+            // 回到顶部
+            this.top.on('click', () => {
+                $('html').animate({
+                    scrollTop: 0
+                });
+            })
         }
         // 楼梯点击事件
         itemClick() {
@@ -41,13 +47,17 @@ function louti() {
                 });
             });
         }
+
+
         // 
         loadLouti() {
             let $top = $(window).scrollTop();
             if ($top >= 600) {
+                $('#right-fixed').show();
                 $('#louti').show();
             } else {
                 $('#louti').hide();
+                $('#right-fixed').hide();
             }
 
             this.items.each(function (index, element) {

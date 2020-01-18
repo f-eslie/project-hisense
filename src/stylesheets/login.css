@@ -203,7 +203,7 @@ body {
     color: #AAA;
     margin-top: 2px;
     left: 0;
-    bottom: -20px;
+    bottom: -8px;
 }
 
 .input-group .input-error{
@@ -247,6 +247,7 @@ body {
     font-size: 14px;
     color: #262626;
     outline: none;
+    margin-bottom: 10px;
 }
 
 .login-bottom {
